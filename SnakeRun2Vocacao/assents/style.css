@@ -3,6 +3,14 @@
 /* 
 *
 */
+:root{
+    --maincentral:#696969a1;
+    --jujuajusta:#f5efea;
+    --fillgame:#000000e6;
+    --victoriathesnek:#8B0000;
+
+}
+
 
 * {
     margin: 0;
@@ -16,7 +24,7 @@
 body,
 main {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    background-color: #696969a1;
+    background-color:var(--maincentral);
     display: flex;
     flex-direction: column;
     min-width: 100vh;
@@ -32,7 +40,7 @@ h1 {
 }
 
 canvas {
-    background-color: #000000e6;
+    background-color: var(--fillgame);
     align-items: center;
     border: 5px solid #8B0000;
 }

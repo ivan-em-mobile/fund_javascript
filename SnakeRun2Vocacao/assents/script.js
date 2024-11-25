@@ -29,7 +29,7 @@ let snake = [initialPosition]
 ]*/
 
 
-
+/*Criar a pontuação das apple em dez em dez pontos*/ 
 const incrementScore = () => {
   score.innerText = + score.innerText + 10
 }
@@ -57,7 +57,6 @@ const randomColor = () => {
 
   return `rgb(${red}, ${green}, ${blue})`
 }
-
 
 
 //Criando a const para a Apple, Sempre Laranja
