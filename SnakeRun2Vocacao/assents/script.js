@@ -9,6 +9,7 @@ const score = document.querySelector(".score--value")
 const finalScore = document.querySelector(".final-score > span")
 const menu = document.querySelector(".menu-screen")
 const buttonPlay = document.querySelector(".btn-play")
+// const timerDisplay = document.querySelector(".timer--value"); // Novo elemento para o timer
 
 
 
@@ -20,6 +21,7 @@ const size = 30
 //criando a Snake por array, sendo preenchido e movimentado na tela
 const initialPosition = { x: 270, y: 240 }
 let snake = [initialPosition]
+// let gameInterval; // Para controlar o setInterval do timer
 
 //Forma Anterior de criar a Snake Run
 /*const snake = [
@@ -192,10 +194,11 @@ const checkCollision = () => {
 //Criar um Game Over, aparecendo na tela
 const gameOver = () => {
   direction = undefined
-
   menu.style.display = "flex"
   finalScore.innerText = score.innerText
   canvas.style.filter = "blur(2px)"
+
+  // clearInterval(gameInterval); // Para o timer
 }
 
 
