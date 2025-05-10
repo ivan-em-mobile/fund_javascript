@@ -14,7 +14,6 @@ boby {
     box-sizing: border-box;
     height: 100vh;
     width: 100vw;
-    /*box-sizing: border-box*/
 }
 
 h1 {
@@ -24,7 +23,7 @@ h1 {
 
 p {
     text-align: justify;
-    /*color: aquamarine;*/
+    /* color: aquamarine; */
 
 }
 
@@ -50,7 +49,7 @@ section#login {
 
 section>div#imagem {
     display: block;
-    background: #5f2c82 url(/assents/bankwp.jpg) no-repeat;
+    background: #5f2c82 url('/bancoVocacaoBroke/assets/bankwp.jpg') no-repeat;
     background-size: cover;
     background-position: left top;
     height: 200px;
